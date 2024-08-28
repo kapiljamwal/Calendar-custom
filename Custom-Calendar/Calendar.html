@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calendar code</title>
+    <!-- Bootstrap latest css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/calendar.css" rel="stylesheet" />
+
+  </head>
+  <body>
+     
+      <!-- Calendar data -->
+       <div class="container-fluid mt20">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="cal-left">
+                <!-- Calendar date picker -->
+                <div class="cal-picker">
+                  <div class="calendar">
+                    <div class="month d-flex justify-content-between">
+                      <div id="monthYear"></div>
+                        <ul>
+                            <!-- <li id="monthYear"></li> -->
+                            <li class="prev" onclick="prevMonth()">&#10094;</li>
+                            <li class="next" onclick="nextMonth()">&#10095;</li>
+                        </ul>
+                    </div>
+                    <ul class="weekdays">
+                        <li>Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                    </ul>
+                    <ul class="days" id="days"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+       </div>
+    <!-- Calendar js -->
+    <script src="assets/js/calendar.js"></script>
+
+  </body>
+</html>
